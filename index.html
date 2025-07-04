@@ -12,18 +12,18 @@
     <div class="card">
         <div class="search">
             <input type="text" placeholder="enter city" spellcheck="false">
-            <button> <img src="img/search.png"></button>
+            <button> <img src="/search.png"></button>
         </div>
         <div class="Error">
             <p>Enter City Please</p>
         </div>
         <div class="weather">
-            <img src="img/rain.png" class="weather-icon">
+            <img src="/rain.png" class="weather-icon">
             <h1 class="temp">0°C</h1>
             <h2 class="city">none</h2>
             <div class="details">
                 <div class="col">
-                    <img src="img/wind.png">
+                    <img src="/wind.png">
                     <div>
                         <p class="wind">15 km/h</p>
                         <p>Wind Speed</p>
@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="col">
-                    <img src="img/humidity.png">
+                    <img src="/humidity.png">
                     <div>
                         <p class="humidity">50%</p>
                         <p>humidity</p>
@@ -67,15 +67,15 @@
             document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 
             if (data.weather[0].main == "Clouds") {
-                weatherIcone.src = "img/clouds.png"
+                weatherIcone.src = "/clouds.png"
             } else if (data.weather[0].main == "Clear") {
-                weatherIcone.src = "img/clear.png"
+                weatherIcone.src = "/clear.png"
             } else if (data.weather[0].main == "Rain") {
-                weatherIcone.src = "img/Rain.png"
+                weatherIcone.src = "/Rain.png"
             } else if (data.weather[0].main == "Drizzle") {
-                weatherIcone.src = "img/drizzle.png"
+                weatherIcone.src = "/drizzle.png"
             } else if (data.weather[0].main == "Mist") {
-                weatherIcone.src = "img/mist.png"
+                weatherIcone.src = "/mist.png"
             }
             weather.style.display = "block"
         }
